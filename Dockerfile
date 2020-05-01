@@ -6,6 +6,8 @@ COPY india-latest.osm.pbf /data
 
 RUN osrm-extract -p /profiles/car-modified.lua /data/india-latest.osm.pbf
 RUN ls -lR
+RUN rm /data/india-latest.osm.pbf
+
 RUN osrm-partition /data/india-latest.osrm
 RUN ls -lR
 RUN osrm-customize /data/india-latest.osrm
