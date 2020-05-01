@@ -26,15 +26,16 @@ docker run --rm -it -p 5000:5000 osrm_in
 
 ## OSRM frontend
 
-For running OSRM-frontend that queries this,
+Note: If deploying on a web server, replace "localhost" with your own IP address or url.
+
+Run detached:
 ```
-docker run -e OSRM_BACKEND='http://localhost:5000' -d -p 9966:9966 osrm/osrm-frontend
+docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,77.432' -e OSRM_ZOOM='5' -d -p 9966:9966 osrm/osrm-frontend
 ```
 
 again for terminal with ctrl+c :
 ```
-docker run -e OSRM_BACKEND='http://localhost:5000' --rm -it -p 9966:9966 osrm/osrm-frontend
+docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,77.432' -e OSRM_ZOOM='5' --rm -it -p 9966:9966 osrm/osrm-frontend
 ```
 
-If deploying on a web server, replace "localhost" with your own IP address or url.
 
