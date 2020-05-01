@@ -1,6 +1,6 @@
 ## Get OSM data
 
-Download latest India osm .pbf to this folder:
+Download latest India osm.pbf to this folder:
 
 https://download.geofabrik.de/asia/india-latest.osm.pbf
 
@@ -33,7 +33,7 @@ Run detached:
 docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,77.432' -e OSRM_ZOOM='5' -d -p 9966:9966 osrm/osrm-frontend
 ```
 
-again for terminal with ctrl+c :
+again for terminal with `CTRL`+`C`:
 ```
 docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,77.432' -e OSRM_ZOOM='5' --rm -it -p 9966:9966 osrm/osrm-frontend
 ```
