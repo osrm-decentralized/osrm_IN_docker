@@ -4,7 +4,7 @@
 FROM osrm/osrm-backend AS build
 
 COPY profiles /profiles
-COPY india-latest.osm.pbf /data
+COPY india-latest.osm.pbf /data/
 
 RUN osrm-extract -p /profiles/car-modified.lua /data/india-latest.osm.pbf
 
