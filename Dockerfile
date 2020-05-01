@@ -1,4 +1,4 @@
-a FROM osrm/osrm-backend
+FROM osrm/osrm-backend
 
 RUN mkdir -p /data /profiles
 COPY profiles /profiles
