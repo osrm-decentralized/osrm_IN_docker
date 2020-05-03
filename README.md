@@ -43,7 +43,7 @@ docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,77.432
 * Download latest India osm.pbf to this folder:
 
     ```shell script
-    wget https://download.geofabrik.de/asia/india-latest.osm.pbf -O data/india-latest.osm.pbf
+    wget -O data/india-latest.osm.pbf https://download.geofabrik.de/asia/india-latest.osm.pbf
     ```
 
 * Process files
