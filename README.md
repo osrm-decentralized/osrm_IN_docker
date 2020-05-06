@@ -1,11 +1,9 @@
-## OSRM deployment with docker image
+## OSRM deployment with Docker image
 
-* Install Git LFS as outlined at https://git-lfs.github.com/
+* Download processed files
 
-* Download processed files from Git LFS
-
-    ```git
-    git lfs pull
+    ```bash
+    bash download-files.sh
     ```
 
 * Run
