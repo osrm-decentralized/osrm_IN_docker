@@ -54,6 +54,7 @@ sudo docker run -e OSRM_BACKEND='http://localhost:5000' -e OSRM_CENTER='21.963,7
   
   ```git
   git submodule update --init --recursive
+  git pull --recurse-submodules
   ```
   
   Build the image
